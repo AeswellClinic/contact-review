@@ -92,32 +92,32 @@ body {
   z-index: 2;
 }
 .card-content {
-  flex: 1; /* ให้ขยายเต็มพื้นที่ */
+  flex: 1; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* จัดให้ส่วนบนและล่างชิดขอบ */
+  justify-content: space-between; 
 
 }
 .button-and-icons {
   display: flex;
   align-items: center;
-  gap: 15px; /* ปรับระยะห่างระหว่างปุ่มกับไอคอน */
+  gap: 15px; 
 }
 
-/* ปรับสไตล์ของ .social-icons ถ้าจำเป็น */
+
 .social-icons {
   display: flex;
   gap: 15px;
 }
 
 .social-icon {
-  color: #AFB0B4; /* ปรับสีตามต้องการ */
+  color: #AFB0B4; 
   font-size: 20px;
   transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-  color: #6c151a; /* ปรับสีเมื่อเอาเมาส์ชี้ */
+  color: #6c151a; 
 }
 
 
@@ -126,10 +126,10 @@ body {
   border-radius: 8px;
   box-shadow: 1px 2px 8px 0 rgba(4, 47, 58, 0.08);
   padding: 20px;
-  height: 100%; /* ให้เต็มความสูงของ .overlay-border */
+  height: 100%; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* จัดให้ส่วนบนและล่างชิดขอบ */
+  justify-content: space-between; 
 }
 
 .contact-info {
@@ -138,7 +138,7 @@ body {
   font-size: 28px;
   font-weight: 600;
   line-height: 1.4;
-  margin-bottom: 10px; /* ปรับระยะห่างตามต้องการ */
+  margin-bottom: 10px; 
 }
 
 .background-shadow p {
@@ -146,7 +146,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 0; /* ปรับระยะห่างตามต้องการ */
+  margin-bottom: 0; 
 }
 
 .opening-hours {
@@ -186,8 +186,8 @@ body {
   overflow: hidden;
 }
 .group-2 i {
-  color: #ffffff; /* กำหนดสีของไอคอนให้ตรงกับข้อความ */
-  font-size: 13px; /* ปรับขนาดของไอคอนตามต้องการ */
+  color: #ffffff; 
+  font-size: 13px; 
 }
 
 .group-2:hover {
@@ -198,14 +198,14 @@ body {
   background-color: #8b0000;
 }
 
-/* เพิ่มเอฟเฟกต์ให้กับไอคอนลูกศร */
+
 .group-2 i.fa-arrow-right {
   transition: transform 0.3s ease;
   
 }
 
 .group-2:hover i.fa-arrow-right {
-  transform: translateX(5px); /* เลื่อนไอคอนลูกศรไปทางขวา 5px */
+  transform: translateX(5px); 
 }
 
 .wrapper {
@@ -275,8 +275,8 @@ body {
       top: -200px;
       left: 36px;
       transform: none;
-      border: 1px solid rgba(0, 0, 0, 0.1); /* เพิ่มเส้นขอบ */
-      border-radius: 8px; /* ปรับความโค้งของมุม */
+      border: 1px solid rgba(0, 0, 0, 0.1); 
+      border-radius: 8px; 
     }
     
     .background-shadow{
@@ -316,27 +316,20 @@ body {
       width: auto;
       justify-content: left;
     }
-/*   
-    .button-and-icons {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-      text-align: start;
-    } */
-  
+
     
     .hours-row {
-      flex-direction: column; /* จัดเรียงในแนวตั้ง */
-      align-items: flex-start; /* จัดให้อยู่ชิดซ้าย */
+      flex-direction: column; 
+      align-items: flex-start; 
     }
   
     .hours-row span {
-      width: 100%; /* ให้แต่ละบรรทัดกว้างเต็มที่ */
+      width: 100%; 
       text-align: start;
     }
   
     .hours-row .weekday-time {
-      margin-top: 5px; /* เพิ่มระยะห่างระหว่างวันและเวลา */
+      margin-top: 5px;
     }
     .main-container{
       height: 650px;
