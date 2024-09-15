@@ -1,0 +1,347 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Prompt, var(--default-font-family);
+}
+
+.F20 {
+  background: url(./assets/images/Group4.png) no-repeat center;
+  background-size: cover;
+  backdrop-filter: blur(0px);
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative; 
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+}
+
+.left-content {
+  margin-right: 20px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.beauty-consultation {
+  margin-bottom: 20px;
+}
+
+.beauty-consultation-7 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.transform-beauty-care {
+  color: #ecf0fa;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.img-photoroom {
+  width: 425px;
+  height: 537px;
+  background: url(./assets/images/403deae2-8741-4448-919d-241eb62b766a.png) no-repeat center;
+  background-size: cover;
+}
+
+.overlay-border {
+  position: absolute;
+  top: 50%;
+  right: 41px;
+  transform: translateY(-50%);
+  width: 340px;
+  height: 397px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(4, 47, 58, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  z-index: 2;
+}
+.card-content {
+  flex: 1; /* ให้ขยายเต็มพื้นที่ */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* จัดให้ส่วนบนและล่างชิดขอบ */
+
+}
+.button-and-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* ปรับระยะห่างระหว่างปุ่มกับไอคอน */
+}
+
+/* ปรับสไตล์ของ .social-icons ถ้าจำเป็น */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  color: #AFB0B4; /* ปรับสีตามต้องการ */
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #6c151a; /* ปรับสีเมื่อเอาเมาส์ชี้ */
+}
+
+
+.background-shadow {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px 0 rgba(4, 47, 58, 0.08);
+  padding: 20px;
+  height: 100%; /* ให้เต็มความสูงของ .overlay-border */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* จัดให้ส่วนบนและล่างชิดขอบ */
+}
+
+.contact-info {
+  display: block;
+  color: #171c18;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 10px; /* ปรับระยะห่างตามต้องการ */
+}
+
+.background-shadow p {
+  color: #5D5D5E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0; /* ปรับระยะห่างตามต้องการ */
+}
+
+.opening-hours {
+  color: #5d5d5e;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.opening-hours span {
+  display: block;
+}
+
+.receive-consultation {
+  color: #ffffff;
+  font-size: 12.25px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.group-2 {
+  background: #6c151a;
+  border: 1px solid #6c151a;
+  border-radius: 96px;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.group-2 i {
+  color: #ffffff; /* กำหนดสีของไอคอนให้ตรงกับข้อความ */
+  font-size: 13px; /* ปรับขนาดของไอคอนตามต้องการ */
+}
+
+.group-2:hover {
+  background-color: #8b0000;
+  transform: scale(1.05);
+}
+.group-2:hover {
+  background-color: #8b0000;
+}
+
+/* เพิ่มเอฟเฟกต์ให้กับไอคอนลูกศร */
+.group-2 i.fa-arrow-right {
+  transition: transform 0.3s ease;
+  
+}
+
+.group-2:hover i.fa-arrow-right {
+  transform: translateX(5px); /* เลื่อนไอคอนลูกศรไปทางขวา 5px */
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+.left-content {
+  margin-right: 20px;
+  text-align: center;
+}
+.overlay-border{
+  top: 76%;
+}
+.img-photoroom {
+
+  margin-left: -113px;
+
+}
+.main-container{
+  padding-top: 50px;
+}
+
+}
+
+@media (max-width: 701px) {
+
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .left-content,
+    .right-content {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .left-content {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .img-photoroom {
+      width: 80%;
+      max-width: 425px;
+      height: 425px;
+      margin: 0 auto;
+    }
+    .overlay-border {
+      position: relative;
+      width: 80%;
+      max-width: 308px;
+      height: auto;
+      margin: 19px auto -1px;
+      top: -200px;
+      left: 36px;
+      transform: none;
+      border: 1px solid rgba(0, 0, 0, 0.1); /* เพิ่มเส้นขอบ */
+      border-radius: 8px; /* ปรับความโค้งของมุม */
+    }
+    
+    .background-shadow{
+      border: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+  
+    .contact-info,
+    .transform-beauty-care,
+    .beauty-consultation-7,
+    .opening-hours {
+      text-align: center;
+      text-align: left;
+    }
+  
+    .beauty-consultation-7 {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+  
+    .transform-beauty-care {
+      font-size: 16px;
+    }
+  
+    .contact-info {
+      font-size: 24px;
+    }
+  
+    .background-shadow p {
+      font-size: 16px;
+    }
+  
+    .opening-hours {
+      font-size: 14px;
+    }
+  
+    .group-2 {
+      width: auto;
+      justify-content: left;
+    }
+/*   
+    .button-and-icons {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      text-align: start;
+    } */
+  
+    
+    .hours-row {
+      flex-direction: column; /* จัดเรียงในแนวตั้ง */
+      align-items: flex-start; /* จัดให้อยู่ชิดซ้าย */
+    }
+  
+    .hours-row span {
+      width: 100%; /* ให้แต่ละบรรทัดกว้างเต็มที่ */
+      text-align: start;
+    }
+  
+    .hours-row .weekday-time {
+      margin-top: 5px; /* เพิ่มระยะห่างระหว่างวันและเวลา */
+    }
+    .main-container{
+      height: 650px;
+      padding-top: 50px;
+    }
+  }
+  
+
